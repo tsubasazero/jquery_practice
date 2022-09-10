@@ -24,13 +24,13 @@ $(function(){
       
       let html = "";
       for(let i = 0; i<items.length; i++){
-      html += `
+      html = html +  `
       <li class="lists-item">
         <div class="list-inner">
-          <p>タイトル：${result[0].items[0].title}</p>
-          <p>著者：${result[0].items[0]["dc:creator"]}</p>
-          <p>出版社：${result[0].items[0]["dc:publisher"]}</p>
-          <a target ="_blank" href="${result[0].items[0].link["@id"]}"}>書籍情報</a>
+          <p>タイトル：${result[0].items[i].title}</p>
+          <p>著者：${result[0].items[i]["dc:creator"]}</p>
+          <p>出版社：${result[0].items[i]["dc:publisher"]}</p>
+          <a target ="_blank" href="${result[0].items[i].link["@id"]}"}>書籍情報</a>
         </div>
       </li>`
 
