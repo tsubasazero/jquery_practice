@@ -22,7 +22,7 @@ $(function(){
       console.log(result);
 
       
-      let html ;
+      let html = "";
       for(let i = 0; i<items.length; i++){
       html += `
       <li class="lists-item">
